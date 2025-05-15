@@ -1,15 +1,15 @@
 # quickrotate
-Useful uitlity for ONYX BOOX Eink devices. It provides several quick actions to be added in top system panel
+Useful utility for ONYX BOOX Eink devices. It provides several quick actions to be added in top system panel
 
 [![](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/info.plateaukao.quickrotate)](https://apt.izzysoft.de/fdroid/index/apk/info.plateaukao.quickrotate)
 
 
 # Features
-1. Rotate screen to specifid direction
+1. Rotate screen to specified direction
 2. Open recent task screen
 3. Take screenshot of current screen
 4. Switch Screen Refresh mode between Normal and A2 mode (v1.5.0)
-5. Separate buttons for Noraml/Speed/A2 mode (v1.6.0)
+5. Separate buttons for Normal/Speed/A2 mode (v1.6.0)
 
 
 # Usage

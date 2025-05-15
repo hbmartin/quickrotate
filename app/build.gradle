@@ -5,6 +5,7 @@ plugins {
 
 android {
     compileSdk 34
+    namespace "info.plateaukao.quickrotate"
 
     defaultConfig {
         applicationId "info.plateaukao.quickrotate"
@@ -15,6 +16,19 @@ android {
         versionName "2.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    kotlinOptions {
+        jvmTarget = '21'
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
@@ -32,7 +46,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.onyx.android.sdk:onyxsdk-device:1.2.28'
+    implementation 'com.onyx.android.sdk:onyxsdk-device:1.2.32'
     testImplementation 'junit:junit:4.13.2'
 }
 

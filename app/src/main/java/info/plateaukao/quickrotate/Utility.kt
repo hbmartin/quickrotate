@@ -3,20 +3,16 @@ package info.plateaukao.quickrotate
 import android.R
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.ClipData
 import android.content.Context
-import android.content.DialogInterface
 import android.content.pm.PackageManager
 import android.provider.Settings.Secure
-import android.widget.Toast
-import info.plateaukao.quickrotate.BuildConfig.*
 
 
 class Utility {
     companion object {
         private const val PERMISSION = "android.permission.WRITE_SECURE_SETTINGS"
-        private final val COMMAND = ("adb -d shell pm grant $APPLICATION_ID").toString() + " " + PERMISSION
-        private final val SU_COMMAND = ("su -c pm grant $APPLICATION_ID").toString() + " " + PERMISSION
+        private final val COMMAND = ("adb -d shell pm grant ${BuildConfig.APPLICATION_ID}").toString() + " " + PERMISSION
+        private final val SU_COMMAND = ("su -c pm grant ${BuildConfig.APPLICATION_ID}").toString() + " " + PERMISSION
 
         private const val DISPLAY_DALTONIZER_ENABLED = "accessibility_display_daltonizer_enabled"
         private const val DISPLAY_DALTONIZER = "accessibility_display_daltonizer"
